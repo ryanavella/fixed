@@ -1,6 +1,6 @@
 # Fixed Point Integers for Go
 
-Int32_32 for scientific and mathematical applications.
+Fixed point for scientific and mathematical applications.
 
 Licensed under the Unlicense (https://unlicense.org/)
 
