@@ -1,0 +1,8 @@
+# Files without extensions
+*
+!/**/
+!*.*
+
+# Binaries
+*.exe
+*.exe~
