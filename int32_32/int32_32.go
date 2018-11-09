@@ -19,22 +19,22 @@ func New() Type {
 	return Type(0)
 }
 
-// NewFromInt32 returns a int32_32.Type representation of an int32.
+// FromInt32 returns a int32_32.Type representation of an int32.
 //
 // This will never overflow, as int32 is a strict subset of int32_32.Type.
-func NewFromInt32(x int32) Type {
+func FromInt32(x int32) Type {
 	return (Type(x) << int32Size)
 }
 
-// NewFromFloat64 returns a int32_32.Type representation of a float64, rounding to the nearest fixed point
+// FromFloat64 returns a int32_32.Type representation of a float64, rounding to the nearest fixed point
 //
 // This has the potential to overflow (or even panic) depending on the mantissa and exponent.
-func NewFromFloat64(x float64) Type {
+func FromFloat64(x float64) Type {
 	return Type(x * (1 << int32Size))
 }
 
-// NewRand returns a new pseudo-random int32_32.Type.
-func NewRand() Type {
+// Rand returns a new pseudo-random int32_32.Type.
+func Rand() Type {
 	return Type(rand.Uint64())
 }
 
