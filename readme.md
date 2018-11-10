@@ -8,6 +8,12 @@ The following fixed point representations are implemented:
 
 Licensed under the Unlicense (https://unlicense.org/)
 
+## Installing
+
+```shell
+go get github.com/ryanavella/fixed
+```
+
 ## Usage
 
 ```golang
