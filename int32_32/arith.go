@@ -4,6 +4,33 @@ import (
 	"github.com/ryanavella/fixed/internal"
 )
 
+// Div returns the quotient of two int32_32.Type's
+func (x Type) Div(y Type) (z Type) {
+	sign := Type(1)
+	if y < 0 {
+		sign = -1
+	}
+	z = x.DivFast(y)
+	yz := y.Mul(z)
+	for yz < x {
+		z += sign
+		yz = y.Mul(z)
+	}
+	for yz > x {
+		z -= sign
+		yz = y.Mul(z)
+	}
+	return z
+}
+
+// DivFast returns the quotient of two int32_32.Type's
+//
+// It relies on floating point conversions which may introduce small errors
+func (x Type) DivFast(y Type) (z Type) {
+	z = Type((1 << int32Size) * float64(x) / float64(y))
+	return z
+}
+
 // Max returns the maximum of two int32_32.Type's
 func Max(x, y Type) Type {
 	if x > y {

@@ -42,5 +42,9 @@ func Rand() Type {
 //
 // For example, the number one-and-a-half is represented as "0x1.80000000".
 func (x Type) String() string {
+	if x < 0 {
+		x = -x
+		return fmt.Sprintf("-%#x.%08x", int32(x>>int32Size), uint32(x))
+	}
 	return fmt.Sprintf("%#x.%08x", int32(x>>int32Size), uint32(x))
 }
