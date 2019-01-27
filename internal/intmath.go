@@ -1,3 +1,4 @@
+// Package internal provides functionality that is common between fixed-point integer types.
 package internal
 
 // ProdAndCarry128 performs multiplication on two uint64's and returns the product and carried bits

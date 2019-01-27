@@ -1,3 +1,4 @@
+// Package int32_32 provides an implementation of int32_32 for Go. See README.md for more information.
 package int32_32
 
 import (

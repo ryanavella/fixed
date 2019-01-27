@@ -1,3 +1,4 @@
+// Package fixed provides an implementation of int32_32 for Go. See README.md for more information.
 package fixed
 
 // Exported constants

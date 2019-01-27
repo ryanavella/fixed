@@ -1,6 +1,6 @@
-# Fixed Point Integers for Go
+# Fixed [![](https://godoc.org/github.com/ryanavella/fixed?status.svg)](https://godoc.org/github.com/ryanavella/fixed)
 
-Fixed point integers for scientific and mathematical applications.
+Fixed point integers for Go.
 
 The following fixed point representations are implemented:
 
@@ -34,7 +34,7 @@ func main() {
 
 ## Scope
 
-This package is intended for efficient and fast computations. There are no plans to support applications which require constant-time cryptographic security.
+This package is intended for efficient and fast computations (i.e. for scientific and mathematical applications). There are no plans to support applications which require constant-time cryptographic security.
 
 ## Contributions
 
