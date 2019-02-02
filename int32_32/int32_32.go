@@ -24,7 +24,7 @@ func New() Type {
 //
 // This will never overflow, as int32 is a strict subset of int32_32.Type.
 func FromInt32(x int32) Type {
-	return (Type(x) << int32Size)
+	return Type(x) << int32Size
 }
 
 // FromFloat64 returns a int32_32.Type representation of a float64, rounding to the nearest fixed point

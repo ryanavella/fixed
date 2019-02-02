@@ -5,9 +5,10 @@ package internal
 func ProdAndCarry128(x, y uint64) (prod, crry uint64) {
 	var i uint
 	for i = 0; i < int64Size; i++ {
-		if y&(1<<i) != 0 {
-			crry, prod = lshiftAndAdd128(crry, prod, x, i)
+		if y&(1<<i) == 0 {
+			continue
 		}
+		crry, prod = lshiftAndAdd128(crry, prod, x, i)
 	}
 	return prod, crry
 }
