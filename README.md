@@ -6,7 +6,7 @@ The following fixed point representations are implemented:
 
 * int32_32
 
-Licensed under the Unlicense (https://unlicense.org/)
+Fixed is free and open source software distributed under the terms of both the MIT License and the Unlicense.
 
 ## Installing
 
