@@ -1,4 +1,6 @@
-# Fixed [![](https://godoc.org/github.com/ryanavella/fixed?status.svg)](https://godoc.org/github.com/ryanavella/fixed)
+[![](https://godoc.org/github.com/ryanavella/fixed?status.svg)](https://godoc.org/github.com/ryanavella/fixed) [![Go Report Card](https://goreportcard.com/badge/github.com/ryanavella/fixed)](https://goreportcard.com/report/github.com/ryanavella/fixed) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/ryanavella/fixed/blob/develop/LICENSE-MIT) [![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](https://github.com/ryanavella/fixed/blob/develop/LICENSE-UNLICENSE)
+
+# Fixed
 
 Fixed point integers for Go.
 
